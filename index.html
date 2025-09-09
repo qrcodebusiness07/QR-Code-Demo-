@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Restaurant · Menu</title>
+    <meta name="description" content="View our restaurant menu." />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <!-- placeholder -->
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container row">
+        <h1 class="brand">Your Restaurant</h1>
+        <nav class="actions">
+          <a class="btn ghost" href="#menu">Menu</a>
+          <button class="btn" onclick="window.print()">Print</button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="menu" class="container">
+      <section class="intro">
+        <h2>Menu</h2>
+        <p class="muted">
+          Tap the page to view full-size. Optimized for phones, tablets, and
+          printing.
+        </p>
+      </section>
+
+      <!-- SINGLE IMAGE -->
+      <section class="gallery" aria-label="Menu page">
+        <a
+          class="card"
+          href="/images/menu01.jpg"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open menu in a new tab"
+        >
+          <picture>
+            <img
+              src="/images/menu01.jpg"
+              alt="Restaurant menu"
+              loading="lazy"
+              width="1200"
+              height="1700"
+            />
+          </picture>
+          <figcaption>Menu</figcaption>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small
+          >© <span id="year"></span> Your Restaurant · All rights
+          reserved</small
+        >
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
