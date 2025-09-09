@@ -33,14 +33,14 @@
       <section class="gallery" aria-label="Menu page">
         <a
           class="card"
-          href="/images/menu01.jpg"
+          href="/images/menu01.png"
           target="_blank"
           rel="noopener"
           aria-label="Open menu in a new tab"
         >
           <picture>
             <img
-              src="/images/menu01.jpg"
+              src="/images/menu01.png"
               alt="Restaurant menu"
               loading="lazy"
               width="1200"
@@ -49,6 +49,38 @@
           </picture>
           <figcaption>Menu</figcaption>
         </a>
+      </section>
+
+      <!-- QR link + image -->
+      <section class="qr-link" style="margin-top: 2rem">
+        <p>
+          📲 QR will open:
+          <a
+            href="https://qrcodebusiness07.github.io/QR-Code-Demo-/"
+            target="_blank"
+            rel="noopener"
+          >
+            https://qrcodebusiness07.github.io/QR-Code-Demo-/
+          </a>
+        </p>
+
+        <!-- The src calls your API; URL already encoded -->
+        <img
+          src="/api/generate_qr?url=https%3A%2F%2Fqrcodebusiness07.github.io%2FQR-Code-Demo-%2F"
+          alt="QR code to open the menu"
+          width="220"
+          height="220"
+          style="display: block; margin-top: 0.5rem"
+        />
+
+        <!-- Optional: download link for the QR image -->
+        <p style="margin-top: 0.5rem">
+          <a
+            href="/api/generate_qr?url=https%3A%2F%2Fqrcodebusiness07.github.io%2FQR-Code-Demo-%2F"
+            download="restaurant-menu-qr.png"
+            >Download QR</a
+          >
+        </p>
       </section>
     </main>
 
