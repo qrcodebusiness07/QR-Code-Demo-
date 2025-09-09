@@ -3,94 +3,30 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Your Restaurant · Menu</title>
-    <meta name="description" content="View our restaurant menu." />
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <title>Our Menu</title>
+    <meta name="description" content="Restaurant menu" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container row">
-        <h1 class="brand">Your Restaurant</h1>
-        <nav class="actions">
-          <a class="btn ghost" href="#menu">Menu</a>
-          <button class="btn" onclick="window.print()">Print</button>
-        </nav>
-      </div>
-    </header>
+    <main class="container">
+      <h1 class="title">Our Menu</h1>
 
-    <main id="menu" class="container">
-      <section class="intro">
-        <h2>Menu</h2>
-        <p class="muted">
-          Tap the page to view full-size. Optimized for phones, tablets, and
-          printing.
-        </p>
-      </section>
-
-      <!-- Menu image -->
-      <section class="gallery" aria-label="Menu page">
-        <a
-          class="card"
-          href="/images/menu01.png"
-          target="_blank"
-          rel="noopener"
-          aria-label="Open menu in a new tab"
-        >
-          <picture>
-            <img
-              src="/images/menu01.png"
-              alt="Restaurant menu"
-              loading="lazy"
-              width="1200"
-              height="1700"
-            />
-          </picture>
-          <figcaption>Menu</figcaption>
-        </a>
-      </section>
-
-      <!-- QR link + static QR image -->
-      <section class="qr-link" style="margin-top: 2rem">
-        <p>
-          📲 QR will open:
-          <a
-            href="https://qrcodebusiness07.github.io/QR-Code-Demo-/"
-            target="_blank"
-            rel="noopener"
-          >
-            https://qrcodebusiness07.github.io/QR-Code-Demo-/
+      <section class="menu-gallery">
+        <!-- Menu page 1 -->
+        <figure class="card">
+          <a href="images/menu01.png" target="_blank" rel="noopener">
+            <img src="images/menu01.png" alt="Menu page 1" loading="lazy" />
           </a>
-        </p>
+        </figure>
 
-        <!-- Static image (generated in step 3) -->
-        <img
-          src="/qr/restaurant-menu-qr.png?v=1"
-          alt="QR code to open the menu"
-          width="220"
-          height="220"
-          style="display: block; margin-top: 0.5rem"
-        />
-
-        <p style="margin-top: 0.5rem">
-          <a href="/qr/restaurant-menu-qr.png" download="restaurant-menu-qr.png"
-            >Download QR</a
-          >
-        </p>
-      </section>
+        <!-- Example for page 2 (optional) -->
+        <!--
+      <figure class="card">
+        <a href="images/menu02.png" target="_blank" rel="noopener">
+          <img src="images/menu02.png" alt="Menu page 2" loading="lazy" />
+        </a>
+      </figure>
+      --></section>
     </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <small
-          >© <span id="year"></span> Your Restaurant · All rights
-          reserved</small
-        >
-      </div>
-    </footer>
-
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
   </body>
 </html>
