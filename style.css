@@ -49,7 +49,6 @@ body {
   transform: scale(1.01);
 }
 
-/* Print-friendly: one menu page per paper page */
 @media print {
   .title {
     display: none;
