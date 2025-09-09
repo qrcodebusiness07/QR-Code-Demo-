@@ -7,7 +7,6 @@
     <meta name="description" content="View our restaurant menu." />
     <link rel="stylesheet" href="/style.css" />
     <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
-    <!-- placeholder -->
   </head>
   <body>
     <header class="site-header">
@@ -29,7 +28,7 @@
         </p>
       </section>
 
-      <!-- SINGLE IMAGE -->
+      <!-- Menu image -->
       <section class="gallery" aria-label="Menu page">
         <a
           class="card"
@@ -51,7 +50,7 @@
         </a>
       </section>
 
-      <!-- QR link + image -->
+      <!-- QR link + static QR image -->
       <section class="qr-link" style="margin-top: 2rem">
         <p>
           📲 QR will open:
@@ -64,20 +63,17 @@
           </a>
         </p>
 
-        <!-- The src calls your API; URL already encoded -->
+        <!-- Static image (generated in step 3) -->
         <img
-          src="/api/generate_qr?url=https%3A%2F%2Fqrcodebusiness07.github.io%2FQR-Code-Demo-%2F"
+          src="/qr/restaurant-menu-qr.png?v=1"
           alt="QR code to open the menu"
           width="220"
           height="220"
           style="display: block; margin-top: 0.5rem"
         />
 
-        <!-- Optional: download link for the QR image -->
         <p style="margin-top: 0.5rem">
-          <a
-            href="/api/generate_qr?url=https%3A%2F%2Fqrcodebusiness07.github.io%2FQR-Code-Demo-%2F"
-            download="restaurant-menu-qr.png"
+          <a href="/qr/restaurant-menu-qr.png" download="restaurant-menu-qr.png"
             >Download QR</a
           >
         </p>
